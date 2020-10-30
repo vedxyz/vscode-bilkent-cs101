@@ -1,0 +1,69 @@
+{
+	// Place your snippets for java here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	
+	// I am including these three snippets for now with the bundle.
+	// If you would like to add your own, go ahead, take a look at the ones below and see if you can figure out how they work.
+	// You can take a look here as well: https://code.visualstudio.com/docs/editor/userdefinedsnippets#_create-your-own-snippets
+	"Simple Console Application": {
+		"prefix": "simpleconsoleapp",
+		"body": [
+			"import java.util.Scanner;",
+			"",
+			"/**",
+			" * ${1:Program Description} ",
+			" * @author ${2:Program Author}",
+			" * @version $CURRENT_DATE.$CURRENT_MONTH.$CURRENT_YEAR",
+			"*/ ",
+			"public class ${TM_FILENAME/(.*)\\..+$/$1/}",
+			"{",
+			"\tpublic static void main(String[] args)",
+			"\t{",
+			"\t\tScanner scan = new Scanner(System.in);",
+			"\t\t",
+			"\t\t// Constants",
+			"\t\t$0",
+			"\t\t// Variables",
+			"\t\t",
+			"\t\t// Program Code",
+			"\t\tSystem.out.println(\"Start...\");",
+			"\t\t",
+			"\t\t",
+			"\t\tSystem.out.println(\"End.\");",
+			"\t\tscan.close();",
+			"\t}",
+			"\t",
+			"}"
+		],
+		"description": "The most basic of \"magical incantations\" to get you up and running quickly. It includes the code necessary for user input, so you can concentrate on converting your algorithm & memory requirements into Java. Write your constants, variables and program code in the appropriate sections."
+	},
+	"Simple Java Class": {
+		"prefix": "simplejavaclass",
+		"body": [
+			"/**",
+			" * ${1:A simple Java class!}",
+			"*/",
+			"public class ${TM_FILENAME/(.*)\\..+$/$1/}",
+			"{",
+			"\t// Properties",
+			"\t$0",
+			"\t// Constructors",
+			"\t",
+			"\t// Methods",
+			"\t",
+			"}"
+		],
+		"description": "A simple Java class to get you started."
+	},
+	"Simple Main Method": {
+		"prefix": "simplemainmethod",
+		"body": [
+			"public static void main(String[] args) {",
+			"\t$0",
+			"}"
+		],
+		"description": "A simple public static main method to get you started."
+	}
+}

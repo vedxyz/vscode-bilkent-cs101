@@ -1,0 +1,115 @@
+{
+    // Last update: 17.10.2020 by Vedat.
+    // For publishing developers of this bundle: I recommend opening this file in your own VSCode installation so that you have IntelliSense to help you with configuration.
+    
+    
+    // The set location script will modify the following property. (Blame the extension for not supporting relative paths for some reason...)
+    // By default, it will come with something like /-/A.BC replacelinejava AB.C/-/
+    "java.home": "/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home",
+    
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////// CS 101 @ Bilkent University ///////////////////////////////////////
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+    /************** THE SECTION BELOW HAS SETTINGS THAT STUDENTS *MAY* BE ASKED TO CHANGE LATER **************/
+    
+    // David asked for this to be disabled for the time being. We might enable it later on.
+    "debug.toolBarLocation": "hidden", // Effectively disables debugging.
+    // Beware that keybinds have been removed for debugging tools. May want to add them again if necessary.
+    
+    // David asked for this to be disabled for the time being. We might enable it later on.
+    "git.enabled": false,
+    
+    // I'm putting these here just in case. There is no plan to change these settings as of yet.
+    "java.import.gradle.enabled": false, // We are not using gradle for the time being.
+    "java.import.maven.enabled": false, // We are not using maven for the time being.
+    "editor.hover.enabled": true, // This setting enables the Javadoc and other things.
+    
+    /************** THE SECTION ABOVE HAS SETTINGS THAT STUDENTS *MAY* BE ASKED TO CHANGE LATER **************/
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+    
+    
+    
+    
+    
+    
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+    /************** ANYTHING PAST THIS LINE SHOULD NORMALLY *NOT* BE MODIFIED BY STUDENTS **************/
+    
+    // Powershell doesn't like certain non-English characters, so we use CMD instead.
+    // (The faulty characters are capital İ and Ğ.)
+	"terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
+	
+	// Disable unwanted help for Java.
+    "java.completion.enabled": true, // This needs to be enabled so variables can be suggested.
+    "java.format.enabled": false, // Let students format their files.
+    "java.debug.settings.enableRunDebugCodeLens": false, // This setting puts a Run | Debug option above classes in the editor. No need.
+    "java.configuration.checkProjectSettingsExclusions": false, // This doesn't do much right now, but I'm keeping it this way just in case.
+	
+	// Prevent extensions from becoming an issue.
+	"extensions.ignoreRecommendations": true,
+    "extensions.autoUpdate": false, // Updating installations will most likely break our customizations. Don't let that happen.
+	
+	// Pretty and useful icons.
+    "workbench.iconTheme": "vscode-icons",
+	
+	// No need to include junk in the explorer.
+    "files.exclude": {
+        "**/Thumbs.db": true
+    },
+	
+    // Editor settings. I don't think there's anything in here that will need to be changed.
+        // Cosmetic settings, I think these look good for our purposes.
+    "editor.roundedSelection": false,
+    "editor.smoothScrolling": true,
+    "editor.trimAutoWhitespace": false,
+    "editor.cursorBlinking": "smooth",
+    "editor.cursorStyle": "line-thin",
+    "editor.tabSize": 4,
+    "editor.lineHeight": 20,
+        // Auto-closing for trigger characters, disabled.
+    "editor.autoClosingBrackets": "never",
+    "editor.autoClosingQuotes": "never", 
+        // Suggestions.
+    "editor.quickSuggestions": true, // This needs to be turned on for variable/snippet suggestions to work.
+    "editor.wordBasedSuggestions": false,
+    "editor.suggestOnTriggerCharacters": false,
+    "editor.suggest.showClasses": false,
+    "editor.suggest.showColors": false,
+    "editor.suggest.showConstants": false,
+    "editor.suggest.showConstructors": false,
+    "editor.suggest.showCustomcolors": false,
+    "editor.suggest.showEnumMembers": false,
+    "editor.suggest.showEnums": false,
+    "editor.suggest.showEvents": false,
+    "editor.suggest.showFields": false,
+    "editor.suggest.showFiles": false,
+    "editor.suggest.showFolders": false,
+    "editor.suggest.showFunctions": false,
+    "editor.suggest.showIcons": true, // This is purely cosmetic I believe.
+    "editor.suggest.showInterfaces": false,
+    "editor.suggest.showIssues": false,
+    "editor.suggest.showKeywords": false,
+    "editor.suggest.showMethods": false,
+    "editor.suggest.showModules": false,
+    "editor.suggest.showOperators": false,
+    "editor.suggest.showProperties": false,
+    "editor.suggest.showReferences": false,
+    "editor.suggest.showSnippets": true, // Necessary to include custom code templates.
+    "editor.suggest.showStructs": false,
+    "editor.suggest.showTypeParameters": false,
+    "editor.suggest.showUnits": false,
+    "editor.suggest.showUsers": false,
+    "editor.suggest.showValues": false,
+    "editor.suggest.showVariables": true, // This is the one suggestion we enable as per David's request.
+    "editor.suggest.showWords": false,
+    "editor.suggestSelection": "first",
+    "editor.codeLens": false,
+    "editor.selectionHighlight": false,
+    "editor.lightbulb.enabled": false,
+    "editor.occurrencesHighlight": false,
+    "editor.showUnused": false,
+	
+	// I don't think these two terminal styles even work. I include them anyway. Maybe they work for Linux/macOS?
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.cursorBlinking": true
+}

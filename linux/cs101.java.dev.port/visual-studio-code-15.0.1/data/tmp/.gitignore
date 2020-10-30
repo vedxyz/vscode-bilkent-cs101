@@ -1,0 +1,3 @@
+# gitignore file for vscode/data/tmp; The purpose is to keep things portable by having a directory "tmp".
+*
+!.gitignore

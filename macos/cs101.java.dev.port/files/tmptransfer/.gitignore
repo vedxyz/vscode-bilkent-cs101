@@ -1,0 +1,3 @@
+# gitignore file for tmptransfer folder; The purpose is to make it appearent that this folder is important.
+*
+!.gitignore

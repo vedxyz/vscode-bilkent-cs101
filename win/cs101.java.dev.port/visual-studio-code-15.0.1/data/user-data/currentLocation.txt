@@ -1,0 +1,1 @@
+"java.home": "C:\\Users\\Ved\\Documents\\Coding Projects\\VSCode-for-CS101\\dist\\win\\cs101.java.dev.port\\jdk-11.0.8+10",

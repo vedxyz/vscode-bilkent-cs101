@@ -1,0 +1,24 @@
+[Desktop Entry]
+
+# The type as listed above
+Type=Application
+
+
+# The name of the application
+Name=VS Code for CS101
+
+# A comment which can/will be used as a tooltip
+Comment=Modified VS Code for CS101 labs
+
+# The path to the folder in which the executable is run
+Path=PWD_VARIABLE/
+# The executable of the application, possibly with arguments.
+Exec=PWD_VARIABLE/code "--user-data-dir" "data/"
+
+# The name of the icon that will be used to display this entry
+Icon=PWD_VARIABLE/bilkentvscode.png
+# Describes whether this application needs to be run in a terminal or not
+Terminal=false
+
+# Describes the categories in which this entry should be shown
+Categories=Programming;Java;
