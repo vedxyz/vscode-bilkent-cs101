@@ -35,10 +35,6 @@
     
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////
     /************** ANYTHING PAST THIS LINE SHOULD NORMALLY *NOT* BE MODIFIED BY STUDENTS **************/
-    
-    // Powershell doesn't like certain non-English characters, so we use CMD instead.
-    // (The faulty characters are capital İ and Ğ.)
-	"terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
 	
 	// Since the $CS101 check is done within .bashrc, we need to ensure that the terminal is running BASH.
     "terminal.integrated.shell.linux": "/bin/bash",
