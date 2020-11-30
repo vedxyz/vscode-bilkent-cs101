@@ -6,7 +6,7 @@
     
     // The set location script will modify the following property. (Blame the extension for not supporting relative paths for some reason...)
     // By default, it will come with something like /-/A.BC replacelinejava AB.C/-/
-    "java.home": "/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home",
+    ////ABC replace this line with java home ABC////
     
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////
     /////////////////////////////////////// CS 101 @ Bilkent University ///////////////////////////////////////
