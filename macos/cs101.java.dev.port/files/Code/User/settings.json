@@ -36,10 +36,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////
     /************** ANYTHING PAST THIS LINE SHOULD NORMALLY *NOT* BE MODIFIED BY STUDENTS **************/
     
-    // Powershell doesn't like certain non-English characters, so we use CMD instead.
-    // (The faulty characters are capital İ and Ğ.)
-	"terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
-	
 	// Disable unwanted help for Java.
     "java.completion.enabled": true, // This needs to be enabled so variables can be suggested.
     "java.format.enabled": false, // Let students format their files.
