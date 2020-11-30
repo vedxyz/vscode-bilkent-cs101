@@ -4,9 +4,8 @@
     // so that you have IntelliSense to help you with configuration.
     
     
-    // The set location script will modify the following property. (Blame the extension for not supporting relative paths for some reason...)
-    // By default, it will come with something like /-/A.BC replacelinejava AB.C/-/
-    ////ABC replace this line with java home ABC////
+    // This setting assumes that AdoptOpenJDK11 is installed to its default location as the macOS bundle is not portable
+    "java.home": "/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home",
     
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////
     /////////////////////////////////////// CS 101 @ Bilkent University ///////////////////////////////////////
