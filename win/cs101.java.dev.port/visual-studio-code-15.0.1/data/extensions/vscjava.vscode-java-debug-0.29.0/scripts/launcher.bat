@@ -56,4 +56,14 @@ if %isdebug%==true (
 
 @robocopy %sourcedir% %targetdir% /MIR > nul
 
+REM Commands to add our JDK to the current terminal's PATH env.
+REM Go up to the necessary directory
+pushd %~dp0\..\..\..\..\..\jdk-11.0.8+10\bin
+REM Save the directory
+set "ABS_PATH_JDK=%cd%"
+REM Return to previous directory
+popd
+REM Add to PATH env.
+set "PATH=%ABS_PATH_JDK%;%PATH%"
+
 @echo(

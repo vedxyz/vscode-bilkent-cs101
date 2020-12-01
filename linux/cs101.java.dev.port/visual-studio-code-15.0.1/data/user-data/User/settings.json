@@ -1,6 +1,7 @@
 {
-    // Last update: 30.10.2020 by Vedat.
-    // For publishing developers of this bundle: I recommend opening this file in your own VSCode installation so that you have IntelliSense to help you with configuration.
+    // Last update: 30.11.2020 by Berkan. (do we really need this line while using Git?)
+    // For publishing developers of this bundle: I recommend opening this file in your own VSCode installation 
+    // so that you have IntelliSense to help you with configuration.
     
     
     // The set location script will modify the following property. (Blame the extension for not supporting relative paths for some reason...)
@@ -34,10 +35,6 @@
     
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////
     /************** ANYTHING PAST THIS LINE SHOULD NORMALLY *NOT* BE MODIFIED BY STUDENTS **************/
-    
-    // Powershell doesn't like certain non-English characters, so we use CMD instead.
-    // (The faulty characters are capital İ and Ğ.)
-	"terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
 	
 	// Since the $CS101 check is done within .bashrc, we need to ensure that the terminal is running BASH.
     "terminal.integrated.shell.linux": "/bin/bash",
@@ -46,7 +43,6 @@
     "terminal.integrated.env.linux" : {
         "CS101": "TRUE"
     },
-	
 	// Disable unwanted help for Java.
     "java.completion.enabled": true, // This needs to be enabled so variables can be suggested.
     "java.format.enabled": false, // Let students format their files.
@@ -56,7 +52,10 @@
 	// Prevent extensions from becoming an issue.
 	"extensions.ignoreRecommendations": true,
     "extensions.autoUpdate": false, // Updating installations will most likely break our customizations. Don't let that happen.
-	
+    
+    // Disable automatic update-checking since a significant update to VSC would probably require a new release of the bundle
+    "update.mode": "manual",
+    
 	// Pretty and useful icons.
     "workbench.iconTheme": "vscode-icons",
 	
