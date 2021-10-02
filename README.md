@@ -1,3 +1,11 @@
+# NO LONGER USED
+
+This "project" was used by around 160 people during the 2020-2021 Fall semester. Due to the hacky and frankly way-too-opiniated nature of it, it is now obsolete. There are much more productive things to do than to try and keep this around.
+
+*Looking back at it, the initial difficulty must've been mostly due to how much I had to hack around existing things rather than simply using the extension API...*
+
+---
+
 <div align="center">
 
 # vscode-bilkent-cs101
